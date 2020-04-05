@@ -42,7 +42,7 @@ var Facebook_correctLogin	= function () {
 		// Saludar al usuario
 		if (document.getElementById('fbStatus')){
 			document.getElementById('fbStatus').innerHTML = '¡Bienvenido ' + facebookUser.name + '!';
-			document.getElementById("next").style.visibility = 'visible';
+			document.getElementById("next").visibility = 'visible';
 		}
 		// Mostrar los datos en la consola
 		console.log('____________________');
