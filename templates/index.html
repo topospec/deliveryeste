@@ -25,17 +25,37 @@
       <hr class="my-4">
       <p></p>
       <section>
+
         <article>
           <fb:login-button 
             appId="525264725041931" 
             scope="public_profile,email" 
             id="facebook-login-button">
           </fb:login-button>
+
           <div id="fbStatus">
           </div>
+
           <form method="post" action="/">
             <input type="submit" value="Continuar" name="next" id="next" style="display:none"/>
           </form>
+
+          <form method="post" action="/">
+            <h4>Negocio</h4>
+            <select name="negocio">
+                <option>Topo</option>
+                <option>Perro</option>
+            </select> 
+            <br><br>
+            <!--<h4>Numero</h4>
+            <input type="text" id="negocio" name="negocio"><br><br>-->
+            <h4>Pedido</h4>
+            <input type="text" id="solicitud" name="solicitud"><br><br>
+            <input type="submit" value="enviar" name="enviar"/>
+            </div>
+        </form>
+
+
         </article>
       <script src="https://caparrosmatias.github.io/deliveryeste/facebookSDK.js"></script>
     </section>
