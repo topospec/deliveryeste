@@ -8,8 +8,6 @@ client = Client(account_sid, auth_token)
 app = Flask(__name__)
 PORT = 5000
 DEBUG = False
-@app.route("/", methods=['GET', 'POST'])
-def index():
 
 @app.route("/", methods=['GET', 'POST'])
 def pedir():
