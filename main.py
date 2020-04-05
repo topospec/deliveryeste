@@ -8,9 +8,11 @@ client = Client(account_sid, auth_token)
 app = Flask(__name__)
 PORT = 5000
 DEBUG = False
-
 @app.route("/", methods=['GET', 'POST'])
 def index():
+
+@app.route("/", methods=['GET', 'POST'])
+def pedir():
     print(request.method)
     if request.method == 'POST':
         if request.form.get('enviar') == 'enviar':
@@ -21,7 +23,7 @@ def index():
                 numero = "5492634795709"
             solicitud = request.form.get('solicitud')
             enviar(solicitud,numero)
-    return render_template("index.html")
+    return render_template("pedir.html")
 
 def enviar(mensaje,numero):
     message = client.messages.create(
