@@ -41,6 +41,3 @@ def enviar(mensaje,numero):
 
 if __name__ == '__main__':
     app.run(port = PORT, debug = DEBUG)
-
-if __name__ == '__main__':
-    app.run(port = PORT, debug = DEBUG)
