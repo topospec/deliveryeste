@@ -9,7 +9,7 @@ app = Flask(__name__)
 PORT = 5000
 DEBUG = False
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/pedir", methods=['GET', 'POST'])
 def pedir():
     print(request.method)
     if request.method == 'POST':
