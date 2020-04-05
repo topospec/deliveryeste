@@ -3,7 +3,7 @@ from twilio.rest import Client
 
 #Credenciales Twilio
 account_sid = 'AC62820f71bb34cfc5cfd97bd977c7ddc8'
-auth_token = '40b45351cfe6ca60a3a246909a019b13'
+auth_token = 'a996c5243ce9f2c76afead71ea19ab9d'
 client = Client(account_sid, auth_token)
 
 #Inicio Flask
