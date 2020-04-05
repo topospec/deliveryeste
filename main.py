@@ -37,7 +37,7 @@ facebook = oauth.remote_app('facebook',
 def get_facebook_token():
     return session.get('facebook_token')
 
-    def pop_login_session():
+def pop_login_session():
     session.pop('logged_in', None)
     session.pop('facebook_token', None)
 
