@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 
 #Inicio Flask
@@ -11,7 +12,7 @@ def login():
     if request.method == 'POST':
         if request.form.get('next') == 'next':
             print("logeado")
-            pedir.py
+            os.system("pedir.py")
     #Si el logeo fue correcto, ejecuto:....
     return render_template("index.html")
 
