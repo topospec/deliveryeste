@@ -41,8 +41,8 @@ var Facebook_correctLogin	= function () {
 		document.getElementById('facebook-login-button').style.display = "none";
 		// Saludar al usuario
 		if (document.getElementById('fbStatus')){
-			document.getElementById('fbStatus').innerHTML = '¡Bienvenido ' + facebookUser.name + '!';
 			document.getElementById('next').style.display = 'block';
+			//document.getElementById('fbStatus').innerHTML = '¡Bienvenido ' + facebookUser.name + '!';
 		}
 		// Mostrar los datos en la consola
 		console.log('____________________');
